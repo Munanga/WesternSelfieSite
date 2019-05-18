@@ -1,0 +1,56 @@
+.jumbotron {
+    margin: 0rem;
+    padding-right: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 2rem;
+    margin-bottom: 3rem;
+
+}
+
+body {
+  padding-right: 2rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 2rem;
+
+}
+.starter-template {
+  padding-right: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 0.6rem;
+    padding-left: 0rem;
+  text-align: center;
+
+}
+
+.img-fluid{
+    float:left;
+    /*!*margin-left: 2rem;*!*/
+    text-align: left;
+    padding-left: 10px;
+
+}
+
+
+.upload{
+    /*float:left;*/
+    /*padding-left: 0rem;*/
+    /*text-align: left;*/
+    padding-top: 0rem;
+}
+
+/*.textinput textInput form-control{*/
+    /*margin-left: 0px; !important;*/
+    /*margin-right: 0px; !important;*/
+/*}*/
+
+input[type="text"]
+{
+    width:500px
+}
+
+.uploadform{
+
+  alignment: center;
+}

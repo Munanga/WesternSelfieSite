@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+{% load crispy_forms_tags %}
+
+{% block title %}upload{% endblock %}
+
+{% block body %}
+<div class="uploadpage">
+    <form method="POST" enctype="multipart/form-data" action="{% url 'WestApp:upload' %}">
+        {% csrf_token %}
+        <div class="uploadform">
+            <p>32 characters</p>
+            {{form|crispy}}
+        </div>
+        <input type="submit" value="upload" class="btn btn-primary">
+    </form>
+    <br>
+    <a href="{% url 'index' %}" >homepage</a>
+</div>
+
+
+{% endblock %}

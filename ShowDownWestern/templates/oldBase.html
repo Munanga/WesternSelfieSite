@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+
+<body>
+
+<div class="jumbotron">
+        <img src="{% static 'images/iconround.png' %}" class="img-fluid" alt="Responsive image" height="220" width="220"/>
+    <main role="main" class="container">
+
+          <div class="starter-template">
+
+              <h1>Western<br> <em>SELFIE</em> <br>Showdown</h1>
+
+          </div>
+
+    </main>
+
+</div>
+
+{% block body %}
+{% endblock %}
+
+
+
+</body>
+</html>

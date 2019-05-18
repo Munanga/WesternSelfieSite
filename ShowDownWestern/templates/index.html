@@ -1,0 +1,30 @@
+{% extends 'base.html'%}
+
+{% block title %}home{% endblock %}
+
+{% block body %}
+<p class="welcome">Welcome! to the Selfie site feel free to upload your awesome selfie and tell yours friends about it.<br>Check out what they have uploaded.</p>
+
+<div class="upload">
+    <em>Upload yours here.</em><br>
+    <a href="{% url 'WestApp:upload'%} " class="btn btn-primary">Upload</a>
+</div>
+
+<div class="container">
+    {% if images %}
+        <div class="row">
+        {% for img in images %}
+                <div class="col-md-6">
+                    <span class="me">{{img.caption}}</span><br>
+                    <img src="media/{{img.image}}" alt="cool pic here" width="500" height="500"><br>
+                    {{img.upload_date|timesince}} ago<br>
+                </div>
+
+        {% endfor %}
+            </div>
+    {% else %}
+        <p>it's lonely here. click the upload button to upload</p>
+    {% endif%}
+
+</div>
+{% endblock %}
